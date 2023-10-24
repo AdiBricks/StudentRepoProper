@@ -11,6 +11,7 @@ Hey! My name is Aditya Ramesh. I'm a sophmore and I am 15 years old. I love to p
 
 ![About Me](images/AboutMeBlogImage.jpg)
 
+
 ## Collaboration / Issues
 - Embedding my 360 youtube video
 - Embedding my game 
