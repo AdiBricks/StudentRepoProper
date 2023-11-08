@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: true
-title: 1Colllegeboard Study + Plans
+title: Colllegeboard Study + Plans
 layout: post
 description: Link to all my collegeboard work, studying, etc
 courses: { csp: {week: 10}}
