@@ -148,3 +148,6 @@ Businesses might opt for royalty payments to protect revenue streams when dealin
 
 Explain the significance of choosing an appropriate license for personal and team GitHub repositories, especially for the CPT project. How does this relate to the broader themes of legal and ethical concerns in computing?
 Choosing the right license helps define how others can use, modify, and distribute your work, providing legal clarity.Understanding and respecting licenses is essential for collaborative projects to ensure a legal and ethical foundation.
+
+
+
