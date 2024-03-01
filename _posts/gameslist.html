@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <!-- Meta tag -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Your Game Universe</title>
+   <!-- styles for the webpage using CSS -->
+   <style>
+       /* styles for the body element */
+       body {
+           /* Font and layout settings */
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           background-color: #f9f9f9;
+           text-align: center;
+       }
+
+       /* sytles for the header element */
+       header {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 1.5em;
+           font-size: 2em;
+       }
+
+       /* styles for the navigation bar */
+       nav {
+           display: flex;
+           justify-content: space-around;
+           background-color: #444;
+           padding: 1em;
+       }
+
+       /* styles for navigation links */
+       nav a {
+           text-decoration: none;
+           color: white;
+           font-weight: bold;
+           font-size: 1.2em;
+           transition: color 0.3s ease-in-out;
+       }
+
+       /* Hover effect for navigation links */
+       nav a:hover {
+           color: #ffcc00;
+       }
+
+       /* styles for filter section */
+       .filter {
+           margin-top: 1em;
+       }
+
+       /* styles for games section */
+       #gamesSection {
+           display: grid;
+           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+           gap: 20px;
+           justify-content: center;
+           padding: 20px;
+       }
+
+       /* styles for individual game cards/bubble looking thingies*/
+       .game {
+           position: relative;
+           overflow: hidden;
+           border-radius: 8px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease-in-out;
+           cursor: pointer;
+       }
+
+       /* scale game cards to mkae it look like its hovering*/
+       .game:hover {
+           transform: scale(1.05);
+       }
+
+       /* styles for game images */
+       .game img {
+           width: 100%;
+           height: auto;
+           border-radius: 8px 8px 0 0;
+           z-index: 0;
+       }
+
+       /* styles for the notif message */
+       .notification {
+           position: fixed;
+           bottom: 10px;
+           right: 10px;
+           background-color: #4CAF50;
+           color: white;
+           padding: 15px;
+           display: none;
+       }
+
+       /* style footer */
+       footer {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 1.5em;
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f9f9f9;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+   </style>
+</head>
+
+<!-- header  -->
+<header>
+   Your Game Universe
+</header>
+
+<body>
+   <!-- nav bar  -->
+   <nav>
+       <a href="http://127.0.0.1:5501/_posts/index.html">HOME</a>
+       <a href="http://127.0.0.1:5501/_posts/gameslist.html">GAMES</a>
+       <a href="http://127.0.0.1:5501/_posts/favorites.html">FAVORITE</a>
+       <a href="http://127.0.0.1:5501/_posts/ibio.html">BIO</a>
+       <a href="http://127.0.0.1:5501/_posts/2024-02-07-SLogin Copy.html">LOGIN</a>
+       <a href="http://127.0.0.1:5501/_posts/2024-02-06-SignUp.html">SIGN UP</a>
+       <a href="http://127.0.0.1:5501/_posts/edit.html">UPDATE</a>
+   </nav>
+
+   <!-- Filters -> buy free sign in etc -->
+   <div class="filter">
+       <label for="nameFilter">Filter by Name:</label>
+       <input type="text" id="nameFilter" oninput="filterGames()" placeholder="Enter name">
+
+       <label for="statusFilter">Filter by Status:</label>
+       <select id="statusFilter" onchange="filterGames()">
+           <option value="">All</option>
+           <option value="Free">Free</option>
+           <option value="Sign-in to Play">Sign-in to Play</option>
+           <option value="Buy">Buy</option>
+       </select>
+   </div>
+   <section id="gamesSection"></section>
+   <!-- notif Section -->
+   <div class="notification" id="notification">
+       Game Favorited!
+   </div>
+
+   <!-- Footer thingy -->
+   <footer>&copy; 2024 Your Game Universe. All rights reserved by... why are u reading this.</footer>
+
+   <!-- Js code -->
+   <script>
+       // Array containing game data
+       const gamesData = [
+           // Game objects with name, description, image, status
+       ];
+
+       // reference to the games section in the HTML
+       const gamesSection = document.getElementById('gamesSection');
+
+       // function to render game cards based on data
+       function renderGames(data) {
+           // clear existing content in the games section
+           gamesSection.innerHTML = '';
+
+           // loop through each game in the data and create a corresponding card
+           data.forEach((game, index) => {
+               // creating elements for the game card
+               
+
+               // Add event listeners for interaction
+               
+
+               // put the card to the games section
+               gamesSection.appendChild(gameDiv);
+           });
+       }
+
+       // function to filter games based on name and status
+       function filterGames() {
+           // Get values from filter inputs
+           
+
+           // filter the games based on criteria
+           const filteredGames = gamesData.filter(game => {
+               // Return if the game should be included in the filtered list
+               return isNameMatch && isStatusMatch;
+           });
+           renderGames(filteredGames);
+       }
+       // function to toggle the favorite status of a game
+       function toggleFavorite(index) {
+           // show games list after being rendered
+           renderGames(gamesData);
+       }
+
+       // Function to navigate to the selected game
+       function navigateToGame(index) {
+           // redirect to the URL of game, unless ur not signed in
+           window.location.href = gameUrls[index];
+       }
+
+
+       renderGames(gamesData);
+   </script>
+</body>
+
+</html>
+
+
