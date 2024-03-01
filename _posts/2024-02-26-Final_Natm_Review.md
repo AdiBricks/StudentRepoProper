@@ -3,12 +3,12 @@ toc: true
 comments: true
 title: natm review
 layout: post
-description: CB Quiz
+description: CPT Final Review
 courses: { csp: {week: 18}}
 type: plans
 ---
 
-# Project Summary:
+# Project Summary: 
 - Our CPT project allows players to access a game universe, where they can build their own games, test it, draw new things, and play some cool games. They can personalize their accounts by choosing their favorite game, and they can update their username and password whenever they want. 
 
 # My Features:
@@ -156,7 +156,7 @@ type: plans
 
 <br>
 
-# Key Commits:
+# The Key Commits:
 [Homepage Major Commit, Animation + Styles + Bubbling added](https://github.com/ShakeSphereStuff/GUIFor2DGameEngine/commit/78db562c9f8baf46934faf52d1458a2e26d5cc16)<br><br>
 [Gamelist commit, filter system plus bubbles](https://github.com/ShakeSphereStuff/GUIFor2DGameEngine/commit/293b49081a8978a255ecdd6c28a7ad569ac83123)<br><br>
 [tictactoe game commit](https://github.com/ShakeSphereStuff/GUIFor2DGameEngine/commit/cb50af3c5e5b163b63aa7bfadbe6d00cadcfb785)<br><br>
