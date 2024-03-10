@@ -49,20 +49,19 @@ type: plans
                 <td>Our project includes a login feature as well as asign up fetaure that the user can log in and sign up through. They will be prompted to enter credentials in order to create the account, and will be asked for thos exact credentials later in order to sign in to their account. They can update those features after logging in, and even add a favorite game. it inputs their name, username, password, and favorite game and email.  
 
                 The layout of the website is really easy to follow, making it easy for users to figure where they need to go and what they need to do. However, if it isnt clear enough, the site homepage directs users to the login and game list websites, as well the featured games and slideshow on the homepage. 
-                <img src="/updatepagepage" alt="Login page">
-                <img src="_posts/homepagedesc.png" alt="Sign up page">
-                </td>
+                ![UpdatePage](../../../images/updatepage.png)
+                ![HomePage](../../../images/homepagedesc.png)
             </tr>
             <tr>
                 <td>Use of at least one list (or other collection type) to represent a collection of data that is stored and used to manage program complexity and help fulfill the users purpose</td>
                 <td>For storing users data, we used an escalate database that stores the user information, including their ‘favorite’, ‘username’, and ‘password’.  
-                <img src="_posts/sqlitedb.png" alt="Database">
+                ![SQLITEDB](../../../images/sqlitedb.png)
                 </td>
             </tr>
             <tr>
                 <td>At least one procedure that contributed to the program’s intended purpose where you have defined: the name, return type, one or more parameters</td>
                 <td> The following procedure checks for the validity of the login information (obtained from the backend using a `fetch` function) and allows the user to login and access their college application tracker. It also redirects users to the specific error pages based on different error cases.
-                <img src="retunrtype" alt="Fetch function">
+                ![returntype](../../../images/returntype.png)              
                 <img src="_posts/404return.png" alt="Fetch">
                 </td>
             </tr>
@@ -70,13 +69,13 @@ type: plans
                 <td>An algorithm that includes sequencing, selection, and iteration that is in the body of the selected procedure
                 </td>
                 <td> This piece of code is from our user.py API file. Of course I'm in checking feature our database will iterate through the different uid's obtained from the request payload and it will change and update the information of the user as user requests it.
-                <img src="_posts/requestpayload.png" alt="404requests">
+                ![RequestPayload](../../../images/requestpayload.png)        
                 </td>
             </tr>
             <tr>
                 <td>Calls to your student-developed procedure</td>
                 <td> This code uses the get request in order to read and extract all the information, as in the users and their information, that is from our database. This will be displayed in our front end.
-                <img src="_posts/getrequests.png" alt="GET">
+                ![requests](../../../images/getrequests.png)        
                 </td>
             </tr>
             <tr>
