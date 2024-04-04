@@ -1,13 +1,12 @@
 ---
 toc: true
 comments: true
-title: Deployment Blog
+title: Deployment Testing 
 layout: post
-description: this is my depolyment blog
+description: Deployment and what got done
 courses: { csp: {week: 29}}
-type: tangibles
+type: plans
 ---
-
 
 ## Curl Command (0.5/0.5)
 ![picture](../../../images/curlnginx.png)
